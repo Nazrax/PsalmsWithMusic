@@ -1,18 +1,5 @@
-\version "2.14.2"
-\language "english"
-\paper {
- #(set-paper-size "letter")
- indent = 0\cm
-}
+title = "Psalm 1"
+tunefile = "tunes/arlington.ly"
+lyricsfile = "lyrics/Psalm001.ly"
 
-\header {
- title = \markup \center-column { "Psalm 1" }
- tagline = ""
-}
-
-\pointAndClickOff
-
-<<
- \include "tunes/arlington.ly"
- \include "lyrics/Psalm001.ly"
->>
+\include "layout.ly"

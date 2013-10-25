@@ -14,6 +14,7 @@ closedir DH;
 
 foreach my $entry (@entries) {
  next unless $entry =~ /\.ly$/;
+ next if $entry eq 'layout.ly';
 
  my $dest = "pdfs/$entry";
  $dest =~ s/\.ly$//;
