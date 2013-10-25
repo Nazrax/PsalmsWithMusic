@@ -1,5 +1,6 @@
 \addlyrics {
- "1. O" Je -- ho -- vah, hear my words;
+ \set stanza = #"1. "
+ O Je -- ho -- vah, hear my words;
  To my thoughts a -- ttent -- ive be.
  Hear my cry, my King, my God,
  For I make my prayer to Thee.
@@ -10,7 +11,8 @@
 }
 
 \addlyrics {
- "2. Tru" -- ly, Thou art not a God
+ \set stanza = #"2. "
+ Tru -- ly, Thou art not a God
  That in sin doth take de -- light;
  E -- vil shall not dwell with Thee,
  Nor the proud stand in Thy sight.
@@ -21,7 +23,8 @@
 }
 
 \addlyrics {
- "3. But" in Thine a -- bun -- dant grace
+ \set stanza = #"3. "
+ But in Thine a -- bun -- dant grace
  To Thy house will I re -- pair;
  Look -- ing to Thy ho -- ly place,
  In Thy fear I'll wor -- ship there.
@@ -32,7 +35,8 @@
 }
 
 \addlyrics {
- "4. For" they flat -- ter with their tongue;
+ \set stanza = #"4. "
+ For they flat -- ter with their tongue;
  In their mouth no truth is found;
  Like an o -- pen grave their throat;
  All their thoughts with sin a -- bound.
@@ -43,7 +47,8 @@
 }
 
 \addlyrics {
- "5. But" let all that trust Thy care
+ \set stanza = #"5. "
+ But let all that trust Thy care
  E -- ver glad and joy -- ful be;
  Let them joy who love Thy name,
  For they guard -- ed are by Thee.

@@ -1,5 +1,6 @@
 \addlyrics {
- "1. Why" do hea -- then na -- tions rage?
+ \set stanza = #"1. "
+ Why do hea -- then na -- tions rage?
  Why do peo -- ples fol -- ly mind?
  Kings of earth in plots en -- gage.
  Ru -- lers are in league com -- bined;
@@ -10,7 +11,8 @@
 }
 
 \addlyrics {
- "2. But" the Lord will scorn them all;
+ \set stanza = #"2. "
+ But the Lord will scorn them all;
  He will laugh Who sits on high.
  Then His wrath will on them fall;
  Sore dis -- pleased He will re -- ply:
@@ -21,7 +23,8 @@
 }
 
 \addlyrics {
- "3. His" de -- cree I will make known:
+ \set stanza = #"3. "
+ His de -- cree I will make known:
  Un -- to Me the Lord did say,
  'Thou art my be -- lov -- ed Son;
  I've be -- got -- ten Thee this day.
@@ -32,7 +35,8 @@
 }
 
 \addlyrics {
- "4. There" -- fore, kings, be wise, give ear;
+ \set stanza = #"4. "
+ There -- fore, kings, be wise, give ear;
  Heark -- en, jud -- ges of the earth;
  Serve the Lord with god -- ly fear;
  Min -- gle trem -- bling with your mirth.

@@ -1,5 +1,6 @@
 \addlyrics {
- "1. God" is our re -- fuge and our strength,
+ \set stanza = #"1. "
+ God is our re -- fuge and our strength,
  A pres -- ent help in our dis -- tress.
  We will not there -- fore be a -- fraid
  Tho all the earth should be re -- moved.
@@ -11,7 +12,8 @@
 }
 
 \addlyrics {
- "2. A" ri -- ver brings re -- fresh -- ing streams
+ \set stanza = #"2. "
+ A ri -- ver brings re -- fresh -- ing streams
  To cheer the ci -- ty of our God,
  The Most High's ho -- ly dwell -- ing place.
  God is in her; she won't be moved;
@@ -23,7 +25,8 @@
 }
 
 \addlyrics {
- "3. O" come, see what the Lord has done:
+ \set stanza = #"3. "
+ O come, see what the Lord has done:
  He des -- o -- la -- tions brought on earth;
  On earth He puts an end to wars,
  Breaks bow and spear, and char -- iots burns.

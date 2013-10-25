@@ -7,8 +7,11 @@
 
 \header {
  title = \markup \center-column { "Psalm 46 second version" }
+ tagline = ""
 }
  
+\pointAndClickOff
+
 <<
  \include "tunes/ein-feste-burg.ly"
  \include "lyrics/Psalm046v2.ly"

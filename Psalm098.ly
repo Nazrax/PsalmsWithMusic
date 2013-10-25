@@ -7,7 +7,10 @@
 
 \header {
  title = \markup \center-column { "Psalm 98" }
+ tagline = ""
 }
+
+\pointAndClickOff
  
 <<
  \include "tunes/desert.ly"

@@ -7,7 +7,10 @@
 
 \header {
  title = \markup \center-column { "Psalm 2" }
+ tagline = ""
 }
+
+\pointAndClickOff
  
 <<
  \include "tunes/hintze.ly"

@@ -7,7 +7,10 @@
 
 \header {
  title = \markup \center-column { "Psalm 17 (set to 'Te Deum')" }
+ tagline = ""
 }
+
+\pointAndClickOff
  
 <<
  \include "tunes/dundee.ly"

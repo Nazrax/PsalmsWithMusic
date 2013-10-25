@@ -1,5 +1,6 @@
 \addlyrics {
- "1. O" sing a new song to the LORD
+ \set stanza = #"1. "
+ O sing a new song to the LORD
  For won -- ders He has done, 
  For won -- ders He has done;
  His right hand and His ho -- ly arm
@@ -9,7 +10,8 @@
 }
 
 \addlyrics { 
- "2. The" great sal -- va -- tion wrought by Him
+ \set stanza = #"2. "
+ The great sal -- va -- tion wrought by Him
  Je -- ho -- vah has made known,
  Je -- ho -- vah has made known,
  His ju -- stice in the na -- tions' sight
@@ -19,7 +21,8 @@
 }
 
 \addlyrics {
- "3. He" mind -- ful of His grace and truth
+ \set stanza = #"3. "
+ He mind -- ful of His grace and truth
  To Is -- r'el's house has been,
  To Is -- r'el's house has been.
  The great sal -- va -- tion of our God
@@ -29,7 +32,8 @@
 }
 
 \addlyrics {
- "4. O" all the earth, sing to the LORD
+ \set stanza = #"4. "
+ O all the earth, sing to the LORD
  And make a joy -- ful sound,
  And make a joy -- ful sound.
  Lift up your voice a -- loud to Him;
@@ -39,7 +43,8 @@
 }
 
 \addlyrics {
- "5. With" harp make mu -- sic to the LORD;
+ \set stanza = #"5. "
+ With harp make mu -- sic to the LORD;
  With harp a psalm O sing!
  With harp a psalm O sing!
  With horn and trum -- pet raise a shout
@@ -49,7 +54,8 @@
 }
 
 \addlyrics {
- "6. Let" seas in all their vast -- ness roar,
+ \set stanza = #"6. "
+ Let seas in all their vast -- ness roar,
  The world, its liv -- ing horde,
  The world, its liv -- ing horde.
  Let riv -- ers clap, let moun -- tains sing
@@ -59,7 +65,8 @@
 }
 
 \addlyrics {
- "7. Be" -- cause He comes, He sure -- ly comes
+ \set stanza = #"7. "
+ Be -- cause He comes, He sure -- ly comes
  The judge of earth to be!
  The judge of earth to be!
  With just -- ice He will judge the world

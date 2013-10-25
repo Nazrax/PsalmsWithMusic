@@ -7,8 +7,11 @@
 
 \header {
  title = \markup \center-column { "Psalm 5" }
+ tagline = ""
 }
- 
+
+\pointAndClickOff 
+
 <<
  \include "tunes/aberystwyth.ly"
  \include "lyrics/Psalm005.ly"
