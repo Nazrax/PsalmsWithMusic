@@ -1,18 +1,5 @@
-\version "2.14.2"
-\language "english"
-\paper {
- #(set-paper-size "letter")
- indent = 0\cm
-}
+title = "Psalm 5"
+tunefile = "tunes/aberystwyth.ly"
+lyricsfile = "lyrics/Psalm005.ly"
 
-\header {
- title = \markup \center-column { "Psalm 5" }
- tagline = ""
-}
-
-\pointAndClickOff 
-
-<<
- \include "tunes/aberystwyth.ly"
- \include "lyrics/Psalm005.ly"
->>
+\include "layout.ly"

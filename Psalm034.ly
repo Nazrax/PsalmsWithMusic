@@ -1,18 +1,5 @@
-\version "2.14.2"
-\language "english"
-\paper {
- #(set-paper-size "letter")
- indent = 0\cm
-}
+title = "Psalm 34"
+tunefile = "tunes/yorkshire.ly"
+lyricsfile = "lyrics/Psalm034.ly"
 
-\header {
- title = \markup \center-column { "Psalm 34" }
- tagline = ""
-}
-
-\pointAndClickOff
- 
-<<
- \include "tunes/yorkshire.ly"
- \include "lyrics/Psalm034.ly"
->>
+\include "layout.ly"

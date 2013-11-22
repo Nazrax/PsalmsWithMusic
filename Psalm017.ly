@@ -1,18 +1,5 @@
-\version "2.14.2"
-\language "english"
-\paper {
- #(set-paper-size "letter")
- indent = 0\cm
-}
+title = "Psalm 17 (set to 'Te Deum')"
+tunefile = "tunes/dundee.ly"
+lyricsfile = "lyrics/Psalm017.ly"
 
-\header {
- title = \markup \center-column { "Psalm 17 (set to 'Te Deum')" }
- tagline = ""
-}
-
-\pointAndClickOff
- 
-<<
- \include "tunes/dundee.ly"
- \include "lyrics/Psalm017.ly"
->>
+\include "layout.ly"

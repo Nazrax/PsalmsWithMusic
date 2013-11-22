@@ -1,7 +1,7 @@
 {
- \clef "bass"
  \key f \major
  \time 3/2 
+ \clef "bass"
  \partial 2 f2 | 
  f4. f8 f2 c2 |
  d4. d8 d2 c2 | 

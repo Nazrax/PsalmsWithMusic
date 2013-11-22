@@ -1,18 +1,7 @@
-\version "2.14.2"
-\language "english"
-\paper {
- #(set-paper-size "letter")
- indent = 0\cm
-}
+title = "Psalm 46 second version"
+tunefile = "tunes/ein-feste-burg.ly"
+lyricsfile = "lyrics/Psalm046v2.ly"
 
-\header {
- title = \markup \center-column { "Psalm 46 second version" }
- tagline = ""
-}
- 
-\pointAndClickOff
+\include "layout.ly"
 
-<<
- \include "tunes/ein-feste-burg.ly"
- \include "lyrics/Psalm046v2.ly"
->>
+

@@ -1,18 +1,5 @@
-\version "2.14.2"
-\language "english"
-\paper {
- #(set-paper-size "letter")
- indent = 0\cm
-}
+title =  "Psalm 98" 
+tunefile = "tunes/desert.ly"
+lyricsfile = "lyrics/Psalm098.ly"
 
-\header {
- title = \markup \center-column { "Psalm 98" }
- tagline = ""
-}
-
-\pointAndClickOff
- 
-<<
- \include "tunes/desert.ly"
- \include "lyrics/Psalm098.ly"
->>
+\include "layout.ly"
