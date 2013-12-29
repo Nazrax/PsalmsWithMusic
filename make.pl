@@ -30,7 +30,7 @@ foreach my $entry (@entries) {
      if (/\\include \s+ ["']([^'"]+)["']/x) {
        push @tostat, $1;
      } elsif (/file \s+ = \s+ ["']([^'"]+)['"]/x) {
-	 print "$entry $1\n";
+       # print "$entry $1\n";
        push @tostat, $1;
      }
    }
