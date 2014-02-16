@@ -16,3 +16,9 @@
  \include \tunefile
  \include \lyricsfile
 >>
+
+\layout {
+ \context {
+  \Score \remove "Bar_number_engraver"
+ }
+}
