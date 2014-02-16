@@ -12,13 +12,24 @@
 
 \pointAndClickOff
 
-<<
- \include \tunefile
- \include \lyricsfile
->>
+lord = \markup { \caps Lord }
+lordcomma = \markup { \caps Lord, }
+lordperiod = \markup { \caps Lord. }
 
-\layout {
- \context {
-  \Score \remove "Bar_number_engraver"
+\score {
+ \new Staff {
+%  \set Staff.midiInstrument = #"choir aahs"
+
+  <<
+   \include \tunefile
+   \include \lyricsfile
+  >>
  }
+ \layout {
+  \context {
+   \Score \remove "Bar_number_engraver"
+  }
+ }
+
+ \midi { }
 }
