@@ -15,6 +15,8 @@
 lord = \markup { \caps Lord }
 lordcomma = \markup { \caps Lord, }
 lordperiod = \markup { \caps Lord. }
+lordsemi = \markup { \caps Lord; }
+lordex = \markup { \caps Lord! }
 
 \score {
  \new Staff {

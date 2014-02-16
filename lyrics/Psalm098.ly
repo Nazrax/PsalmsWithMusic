@@ -1,6 +1,6 @@
 \addlyrics {
  \set stanza = #"1. "
- O sing a new song to the LORD
+ O sing a new song to the \lord 
  For won -- ders He has done, 
  For won -- ders He has done;
  His right hand and His ho -- ly arm
@@ -15,9 +15,9 @@
  Je -- ho -- vah has made known,
  Je -- ho -- vah has made known,
  His ju -- stice in the na -- tions' sight
- The LORD has clear -- ly shown,
- The LORD has clear -- ly shown,
- The LORD has clear -- ly shown.
+ The \lord has clear -- ly shown,
+ The \lord has clear -- ly shown,
+ The \lord has clear -- ly shown.
 }
 
 \addlyrics {
@@ -33,7 +33,7 @@
 
 \addlyrics {
  \set stanza = #"4. "
- O all the earth, sing to the LORD
+ O all the earth, sing to the \lord
  And make a joy -- ful sound,
  And make a joy -- ful sound.
  Lift up your voice a -- loud to Him;
@@ -44,13 +44,13 @@
 
 \addlyrics {
  \set stanza = #"5. "
- With harp make mu -- sic to the LORD;
+ With harp make mu -- sic to the \lordsemi
  With harp a psalm O sing!
  With harp a psalm O sing!
  With horn and trum -- pet raise a shout
- Be -- fore the LORD the King,
- Be -- fore the LORD the King,
- Be -- fore the LORD the King.
+ Be -- fore the \lord the King,
+ Be -- fore the \lord the King,
+ Be -- fore the \lord the King.
 }
 
 \addlyrics {
@@ -59,9 +59,9 @@
  The world, its liv -- ing horde,
  The world, its liv -- ing horde.
  Let riv -- ers clap, let moun -- tains sing
- Their joy be -- fore the LORD,
- Their joy be -- fore the LORD,
- Their joy be -- fore the LORD!
+ Their joy be -- fore the \lordcomma
+ Their joy be -- fore the \lordcomma
+ Their joy be -- fore the \lordex
 }
 
 \addlyrics {

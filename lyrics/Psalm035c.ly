@@ -16,7 +16,7 @@
 
 \addlyrics {
  \set stanza = #"3. "
- LORD, Thou hast seen; then be not still!
+ \lordcomma Thou hast seen; then be not still!
  O Lord, be not far from my sight!
  Stir up Thy -- self! To just -- ice wake!
  My God, my Lord, up -- hold my right!
@@ -24,7 +24,7 @@
 
 \addlyrics {
  \set stanza = #"4. "
- Judge me in just -- ice, LORD my God,
+ Judge me in just -- ice, \lord my God,
  And let them not re -- joice in me,
  Nor say in heart, "\"He" is de -- vour'd!
  Be -- hold, our soul's de -- sire we "see!\""
@@ -43,7 +43,7 @@
  But let them shout and loud re -- joice
  Who long to see me just -- i -- fied;
  And let them say with cease -- less voice,
- "\"The" LORD be e -- ver mag -- ni -- fied!
+ "\"The" \lord be e -- ver mag -- ni -- fied!
 }
 
 \addlyrics {
