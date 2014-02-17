@@ -1,0 +1,4 @@
+d4 d d d | d cs d2 | d4 d8[( cs)] b,([ cs)]  d4 | d cs d2 |
+d4 d d d | d cs d2 | d4 d8([ cs]) b,[( cs]) d4 | d cs d2 |
+cs4 cs d cs | fs e8( d) cs2 | e8( fs) g4 fs fs | fs fs8( e) d2 |
+d4 d d cs | d d cs2 | d4 d8([ cs]) b,[( cs]) d4 | d cs d2 |

@@ -1,0 +1,4 @@
+a4 d' a b | a4. g8 fs2 | a4 a g fs | e e d2 |
+a4 d' a b | a4. g8 fs2 | a4 a g fs | e e d2 |
+e4 e fs8( gs8) a4 | a gs a2 | b4. cs'8 d'4 d' | cs' cs' b2 |
+fs4 fs b a | a gs a2 | b4 a g fs | e e d2 |
