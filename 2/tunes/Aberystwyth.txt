@@ -1,0 +1,2 @@
+key: g \major
+time: 4/2
