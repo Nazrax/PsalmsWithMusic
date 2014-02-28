@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use Data::Dumper;
+use File::stat;
 
 my %songs;
 opendir DH, 'lyrics' or die;
@@ -13,6 +14,7 @@ foreach my $entry (readdir DH) {
 
  $entry =~ s/.txt$//;
  $songs{$entry} = {};
+ $songs{$entry}{mtime} = stat("lyrics/$entry.txt")->mtime;
 }
 closedir DH;
 
@@ -29,10 +31,11 @@ foreach my $tune (sort keys %tunes) {
  my $r = $tunes{$tune};
  $r->{notes} = {};
 
+ $tunes{$tune}{mtime} = stat("tunes/$tune.txt")->mtime;
  open IH, "tunes/$tune.txt" or die "Unable to open 'tunes/$tune.txt': $!\n";
  while (<IH>) {
   if (/(\w+): \s* (.*)/x) {
-   $r->{$1} = $2;
+   $r->{lc($1)} = $2;
   } else {
    print STDERR "Invalid line '$_' in 'tunes/$tune.txt'\n";
   }
@@ -46,6 +49,8 @@ foreach my $tune (sort keys %tunes) {
  foreach my $part (qw/soprano alto tenor bass/) {
   my $path = "tunes/$part/$tune.txt";
   if (-e $path) {
+   my $mtime = stat($path)->mtime;
+   $tunes{$tune}{mtime} = $mtime if ($mtime > $tunes{$tune}{mtime});
    my $notes = '';
    open IH, $path or die "Unable to open $path: $!\n";
    while (<IH>) { 
@@ -74,14 +79,15 @@ foreach my $song (sort keys %songs) {
     $verse = '';
    } else {
     s/(?:^|\W)(\d+)\_([^\s]+)/\\markup { \\super $1 $2 }/g;
-    s/LORD([^\s]*)/\\markup { \\caps Lord$1 }/g;
+    s/([^\s]*)LORD([^\s]*)/\\markup { \\caps $1Lord$2 }/g;
+    s/([^\s]*)GOD([^\s]*)/\\markup { \\caps $1God$2 }/g;
     $verse .= "$_\n";
    }
   } else { 
    if (/^\s*$/) {
     $inLyrics = 1;
    } elsif (/(\w+): \s* (.*)/x) {
-    $r->{$1} = $2;
+    $r->{lc($1)} = $2;
    } else {
     print STDERR "$song: Invalid line '$_'\n";
    }
@@ -90,7 +96,7 @@ foreach my $song (sort keys %songs) {
  push @{$r->{verses}}, $verse unless ($verse =~ /^\s*$/s);
 
  if (!defined $r->{tune} || !defined $r->{name}) {
-  die "$song doesn't define either tune or name\n";
+  die "$song is missing either tune or name\n";
  }
 }
 
@@ -198,7 +204,6 @@ EOF
   }
 
   if (defined $lowerParts && $lowerParts ne '') {
-print STDOUT "lowerParts is '$lowerParts'\n";
    print "    \\new Staff {\n";
    print "    \\key $t{key}\n";
    print "     \\time $t{time}\n";
