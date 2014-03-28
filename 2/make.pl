@@ -55,6 +55,8 @@ foreach my $tune (sort keys %tunes) {
    open IH, $path or die "Unable to open $path: $!\n";
    while (<IH>) { 
     chomp;
+    s/#.*$//;
+    next if /^\s*$/;
     $notes .= $_ . " \\bar \"|\" \\break\n";
    }
    close IH;
