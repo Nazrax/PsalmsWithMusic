@@ -80,7 +80,8 @@ foreach my $song (sort keys %songs) {
     push @{$r->{verses}}, $verse unless ($verse =~ /^\s*$/s);
     $verse = '';
    } else {
-    s/(?:^|\W)(\d+)\_([^\s]+)/\\markup { \\super $1 $2 }/g;
+    #s/(?:^|\W)(\d+)\_([^\s]+)/\\markup { \\super $1 $2 }/g;
+    s/(\d+)\_([^\s]+)/\\markup { \\super $1 $2 }/g;
     s/([^\s]*)LORD([^\s]*)/\\markup { \\caps $1Lord$2 }/g;
     s/([^\s]*)GOD([^\s]*)/\\markup { \\caps $1God$2 }/g;
     $verse .= "$_\n";
@@ -221,7 +222,17 @@ EOF
   print "    \\Score \\remove \"Bar_number_engraver\"\n";
   print "   }\n";
   print "  }\n";
-  print "  \\midi { }\n";
+  print "  \\midi {\n";
+  print "   \\context {\n";
+  print "    \\Staff\n";
+  print "    \\remove \"Staff_performer\"\n";
+  print "   }\n";
+  print "   \\context {\n";
+  print "    \\Voice\n";
+  print "    \\consists \"Staff_performer\"\n";
+  print "   }\n";
+#  print "   \\tempo 2 = 150\n";
+  print "  }\n";
   print " }\n";
   print "}\n";
 
