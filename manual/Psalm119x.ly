@@ -3,6 +3,7 @@
 \paper {
  #(set-paper-size "letter")
  indent = 0\cm
+ print-page-number = ##f
 }
 
 \pointAndClickOff
@@ -207,6 +208,14 @@ stray4 -- ing4 sheep,4 Thy4 serv4 -- ant,4 seek,4 For4 Thy4 com4 -- mands4 I'll4
    }
   }
  }
+ \markup {
+  \fill-line {
+   \center-column {
+    \vspace #1
+    \italic "Don't sing the text in italics; it's only there to help with timing"
+   }
+  }
+ }
 }
 
 \book {
@@ -245,6 +254,14 @@ stray4 -- ing4 sheep,4 Thy4 serv4 -- ant,4 seek,4 For4 Thy4 com4 -- mands4 I'll4
    \context {
     \Voice
     \consists "Staff_performer"
+   }
+  }
+ }
+ \markup {
+  \fill-line {
+   \center-column {
+    \vspace #1
+    \italic "Don't sing the text in italics; it's only there to help with timing"
    }
   }
  }
@@ -289,6 +306,14 @@ stray4 -- ing4 sheep,4 Thy4 serv4 -- ant,4 seek,4 For4 Thy4 com4 -- mands4 I'll4
    }
   }
  }
+ \markup {
+  \fill-line {
+   \center-column {
+    \vspace #1
+    \italic "Don't sing the text in italics; it's only there to help with timing"
+   }
+  }
+ }
 }
 
 \book {
@@ -327,6 +352,152 @@ stray4 -- ing4 sheep,4 Thy4 serv4 -- ant,4 seek,4 For4 Thy4 com4 -- mands4 I'll4
    \context {
     \Voice
     \consists "Staff_performer"
+   }
+  }
+ }
+}
+
+
+
+
+
+
+
+
+\book {
+ \header {
+  title = ""
+  tagline = ""
+ }
+
+ \paper {
+  print-all-headers = ##t
+ }
+ \bookOutputSuffix "satb"
+
+ \score {
+  <<
+   \new Staff <<
+    #(set-accidental-style 'modern)
+    \set Staff.printPartCombineTexts = ##f
+
+    \key bf \major
+    \time 4/4
+    \numericTimeSignature
+
+    \new Voice {  \soprano }
+    \new Lyrics \verseAs
+    \new Lyrics \verseBs
+    \new Lyrics \verseCs
+    \new Lyrics \verseDs
+   >>
+  >>
+  \header {
+   title = "Psalm 119x (Soprano)"
+  } 
+  \layout {
+   \context {
+    \Score \remove "Bar_number_engraver"
+   }
+  }
+ }
+
+ \score {
+  <<
+   \new Staff <<
+    #(set-accidental-style 'modern)
+    \set Staff.printPartCombineTexts = ##f
+
+    \key bf \major
+    \time 4/4
+    \numericTimeSignature
+
+    \new Voice {  \alto }
+    \new Lyrics \verseAa
+    \new Lyrics \verseBa
+    \new Lyrics \verseCa
+    \new Lyrics \verseDa
+   >>
+  >>
+  \header {
+   title = "Psalm 119x (Alto)"
+  } 
+  \layout {
+   \context {
+    \Score \remove "Bar_number_engraver"
+   }
+  }
+ }
+ \markup {
+  \fill-line {
+   \center-column {
+    \vspace #1
+    \italic "Don't sing the text in italics; it's only there to help with timing"
+   }
+  }
+ }
+
+ \score {
+  <<
+   \new Staff <<
+    #(set-accidental-style 'modern)
+    \set Staff.printPartCombineTexts = ##f
+
+    \key bf \major
+    \time 4/4
+    \numericTimeSignature
+
+    \new Voice {  \tenor }
+    \new Lyrics \verseAt
+    \new Lyrics \verseBt
+    \new Lyrics \verseCt
+    \new Lyrics \verseDt
+   >>
+  >>
+  \header {
+   title = "Psalm 119x (Tenor)"
+  } 
+  \layout {
+   \context {
+    \Score \remove "Bar_number_engraver"
+   }
+  }
+ }
+ 
+ \markup { \vspace #2 }
+
+ \score {
+  <<
+   \new Staff <<
+    #(set-accidental-style 'modern)
+    \set Staff.printPartCombineTexts = ##f
+
+    \key bf \major
+    \time 4/4
+    \numericTimeSignature
+
+    \new Voice {  \bass }
+    \new Lyrics \verseAb
+    \new Lyrics \verseBb
+    \new Lyrics \verseCb
+    \new Lyrics \verseDb
+   >>
+  >>
+  \header {
+   title = "Psalm 119x (Bass)"
+  } 
+  \layout {
+   \context {
+    \Score \remove "Bar_number_engraver"
+   }
+  }
+ }
+
+ \markup {
+  \fill-line {
+   \center-column {
+    \vspace #1
+    \italic "Don't sing the text in italics; it's only there to help with timing"
    }
   }
  }
