@@ -116,6 +116,16 @@ our @COMBOS = (
  {name => 'satb', parts => [['soprano', 'alto'], ['tenor', 'bass']]}
 );
 
+our %PARTS = (
+ s => 'Soprano',
+ a => 'Alto',
+ t => 'Tenor',
+ b => 'Bass',
+ sa => 'Soprano + Alto',
+ tb => 'Tenor + Bass',
+ satb => undef
+);
+
 foreach my $song (sort keys %songs) {
  my %s = %{$songs{$song}};
 
@@ -174,11 +184,16 @@ EOF
    $lowerPartCombine = (@{$parts[1]} > 1) ? "\\partcombine" : '';
   }
 
+  my $prettyname = $s{name};
+  if (defined $PARTS{$combo->{name}}) {
+   $prettyname .= " (" . $PARTS{$combo->{name}} . ")";
+  }
+ 
   print <<EOF;
 \\book {
 
  \\header {
-  title = \\markup \\center-column { \"$s{name}\" }
+  title = \\markup \\center-column { \"$prettyname\" }
   tagline = \"\"
  }
  \\bookOutputSuffix \"@{[$combo->{name}]}\"
