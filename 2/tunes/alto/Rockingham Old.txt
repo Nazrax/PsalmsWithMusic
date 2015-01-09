@@ -1,0 +1,3 @@
+bf,4 | ef2 d4 | ef2 ef4 | ef2 ef4 | ef2 f4 | ef2 ef4 |
+ef4( f4) g4 | f2 ef4 | ef4( d4) d | f2 f4 | f2 d4 |
+ef2 ef4 | d2 bf,4 | c4( d) ef | d2 ef4 | ef2 d4 | bf,2 
