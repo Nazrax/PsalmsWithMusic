@@ -1,0 +1,4 @@
+ef4 | ef g, bf, bf, | c2. af8( g) | f4 ef d ef | bf,2.
+af4 | g ef g, c | b, g, c d | ef ef g, bf, | ef2.
+ef4 | ef8( f) g4 af8( g) f4 | ef2. c8( d) | ef4 c f f | bf,2. bf,4
+bf,4 bf, b, c4 | g, b, c d | ef ef g,8( af,) bf,4 | ef2.
