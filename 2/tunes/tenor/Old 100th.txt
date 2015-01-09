@@ -1,0 +1,3 @@
+b2 | b4 a g fs | g2 fs | g\fermata
+g2 | g4 g fs g | g2 g | fs\fermata b | a4 g fs g |
+g2 a | b\fermata a | g4 g fs e | g2 fs | g\fermata
