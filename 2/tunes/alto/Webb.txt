@@ -1,0 +1,4 @@
+d4 | d4. d8 f4 f | g2 ef4 ef | f f f f | f2 r4
+f4 | d4. d8 f4 f | g2 ef4 ef | f d f ef | d2 r4
+f4 | f4. f8 f4 f | f2 f4 f | ef f g g | f2.
+f4 | d4. d8 f4 f | g2 ef4 ef | f d f ef | d2 r4
