@@ -148,10 +148,12 @@ foreach my $song (sort keys %songs) {
 
 EOF
 
+ my $autobeam = '';
+ $autobeam = '\autoBeamOff' if defined $t{autobeamoff};
  my $partial = '';
  $partial = "\\partial $t{partial}" if (defined $t{partial});
  foreach my $part (sort keys %{$t{notes}}) {
-  print "$part = \\transpose c $TRANSPOSES{$part} { \\clef $CLEFS{$part} $partial $t{notes}{$part} }\n";
+  print "$part = \\transpose c $TRANSPOSES{$part} { \\clef $CLEFS{$part} $partial $autobeam $t{notes}{$part} }\n";
  }
  for(my $i=0, my $v='A'; $i < @{$s{verses}}; $i++, $v++) {
   print "verse$v = \\lyricmode {\n";
