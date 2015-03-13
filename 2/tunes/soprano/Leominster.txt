@@ -1,0 +1,4 @@
+fs4 | fs fs fs fs | g2. g4 | e4 e e fs | e2.
+e4 | fs fs a a | d' d' d'\fermata d | d fs fs e | d2.
+d4 | g4. g8 g4 d | fs2. fs4 | b4. b8 b4 fs | a2.
+a4 | d'4. d'8 d'4 cs' | cs' b a g | fs4. d8 fs4 e | d2.

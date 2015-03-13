@@ -1,0 +1,7 @@
+a4 | a a a a | b2. b4 | b b b b | e2.
+a4 | a a a e | fs fs g\fermata e | fs a a g | fs2.
+fs4 | b4. b8 b4 g | a2. a4 | d'4. d'8 d'4 b | cs'2.
+cs'4 | d'4 a as as | as b b b | a4. fs8 a4 g | fs2.
+
+
+

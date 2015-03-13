@@ -1,0 +1,4 @@
+e2 e4 g | g2. g4 | g g g g | f1 | g2 c'4 d' | c' b
+c' a | g2 g | g1 | g2 c'4 c' | c'2. c'4 | c' d' c' a | g1 |
+gs2 a4 d' | e' b a a | a2 gs | a1 | e2 g4 g | g2 g |
+g4 g g fs | g2. g4 | f2 f | c'4 b c' f' | e'2 d' | e'1

@@ -1,0 +1,4 @@
+g2 b b b | b b4( a) g1 | b2 b b b | b b b1 |
+g4( a) b2 b b | b fs4( a) g1 | b2 b4( d') d'2 c' | b b4( a) g1 |
+g2 g g a | b d'4( c') b1 | b2 b b d'4( fs) | g( b2) as4 b1 |
+g2 c' d' g | b e' ds'1 | b4( c') b( a) b2 b | b fs8( g a4) g1 |

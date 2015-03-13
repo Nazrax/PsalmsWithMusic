@@ -1,0 +1,4 @@
+c2 c4 d | e2. f4 | g e f g | a1 | g2 a4 b | c' d'
+e' d' | c'2 b | c'1 | c'2 e'4 g | a2. g4 | a b c' d' | b1 |
+b2 c'4 b | a gs a b | c'2 b | a1 | a2 g4 f | e2 c2 |
+f4 e d c | g2. g4 | a2 b | c'4 d' e' d' | c'2 b | c'1

@@ -1,0 +1,5 @@
+af,4 | af, af, af, c | ef ef ef ef | af af ef f |
+ef ef ef8([ df]) c([ bf,]) | af,4 af, af, c | ef ef ef ef | af c
+df df | ef ef af,\fermata af | af af af af | ef ef ef
+ef | af af ef f | ef ef ef8([ df]) c[( bf,]) | af,4 af, af, c |
+ef ef ef ef | af c df df | ef ef af,\fermata

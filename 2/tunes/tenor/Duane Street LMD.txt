@@ -1,0 +1,5 @@
+af4 | c' af af af | g bf bf g | af c' bf af |
+g g g af8([ bf]) | c'4 af af af | g bf bf g | af af
+af af8[( bf]) | c'4 bf c'\fermata af | c' af af c' | bf g g
+bf | af c' bf af | g g g af8([ bf]) | c'4 af af af
+g bf bf g | af af af af8([ bf]) | c'4 bf c'\fermata

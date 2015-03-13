@@ -1,0 +1,5 @@
+c4 | ef ef ef ef | ef ef ef ef | ef ef ef c |
+ef ef ef ef | ef ef ef ef | ef ef ef ef | ef ef
+f f | ef ef ef\fermata ef | ef ef ef ef | ef ef ef
+ef | ef ef ef c | ef ef ef ef | ef ef ef ef |
+ef ef ef ef | ef ef f f | ef ef ef\fermata

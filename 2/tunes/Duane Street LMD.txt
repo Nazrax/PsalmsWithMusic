@@ -1,0 +1,4 @@
+key: af \major
+time: 4/4
+partial: 4
+autobeamoff: 1

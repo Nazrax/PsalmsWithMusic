@@ -1,0 +1,4 @@
+e2 e4( fs) g( a) b2 | g2 fs e1 | g2 fs e ds | e4( fs) g2 fs1 |
+e2 e4( fs) g( a) b2 | g2 fs e1 | fs2 g4( a) b2 a2 | g2 fs2 e1 |
+e2 d e fs | g b4( a) g1 | g2 fs g a | b d'4( cs') b1 |
+e'2 e' d' b | g a b1 | e2 e4( fs) g( a) b2 | g2 fs e1 |
