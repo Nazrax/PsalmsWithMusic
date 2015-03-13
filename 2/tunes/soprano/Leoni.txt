@@ -1,0 +1,4 @@
+c4 | f g af bf | c'2. af4 | bf c' df' ef' | c'2. g4 | af bf c' df' |
+ef' g af df' | c'2 bf | af2. af4 | c' c' c' c' | bf2. af8([ g)] | f([ g]) af([ bf)] c'4 f |
+e2. c4 | f g af bf | c' bf8([ c')] df'4 c'8([ bf)] | af2 g | f2.
+
