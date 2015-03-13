@@ -45,7 +45,7 @@ foreach my $tune (sort keys %tunes) {
  if (!defined $r->{key} || !defined $r->{time}) {
   die "$tune is missing key or time\n";
  }
- 
+
  foreach my $part (qw/soprano alto tenor bass/) {
   my $path = "tunes/$part/$tune.txt";
   if (-e $path) {
@@ -53,12 +53,15 @@ foreach my $tune (sort keys %tunes) {
    $tunes{$tune}{mtime} = $mtime if ($mtime > $tunes{$tune}{mtime});
    my $notes = '';
    open IH, $path or die "Unable to open $path: $!\n";
-   while (<IH>) { 
+   while (<IH>) {
     chomp;
     s/#.*$//;
     next if /^\s*$/;
-    $notes .= $_ . " \\bar \"|\" \\break\n";
+    $notes .= $_;
+    $notes .= " \\bar \"|\" \\break" if !defined $r->{nobreak};
+    $notes .= "\n";
    }
+   $notes .= "\\bar \"||\"";
    close IH;
    $r->{notes}{$part} = $notes;
   }
@@ -67,7 +70,7 @@ foreach my $tune (sort keys %tunes) {
 
 foreach my $song (sort keys %songs) {
  my $r = $songs{$song};
- $r->{verses} = []; 
+ $r->{verses} = [];
 
  open IH, "lyrics/$song.txt" or die "Unable to open 'lyrics/$song.txt': $!\n";
  my $inLyrics = 0;
@@ -75,7 +78,7 @@ foreach my $song (sort keys %songs) {
 
  while (<IH>) {
   chomp;
-  if ($inLyrics) {  
+  if ($inLyrics) {
    if (/^\s*$/) {
     push @{$r->{verses}}, $verse unless ($verse =~ /^\s*$/s);
     $verse = '';
@@ -86,7 +89,7 @@ foreach my $song (sort keys %songs) {
     s/([^\s]*)GOD([^\s]*)/\\markup { \\caps $1God$2 }/g;
     $verse .= "$_\n";
    }
-  } else { 
+  } else {
    if (/^\s*$/) {
     $inLyrics = 1;
    } elsif (/(\w+): \s* (.*)/x) {
@@ -130,7 +133,8 @@ foreach my $song (sort keys %songs) {
  my %s = %{$songs{$song}};
 
  if (!defined $tunes{$s{tune}}) {
-  die "$song: can't find tune '$s{tune}'\n";
+  print STDERR "$song: can't find tune '$s{tune}'\n";
+  next;
  }
  my %t = %{$tunes{$s{tune}}};
 
@@ -142,6 +146,7 @@ foreach my $song (sort keys %songs) {
 \\paper {
  #(set-paper-size "letter")
  indent = 0\\cm
+ page-count = 1
 }
 
 \\pointAndClickOff
@@ -202,6 +207,7 @@ EOF
  \\score {
   <<
    \\new Staff <<
+    #(set-accidental-style 'modern)
     \\set Staff.printPartCombineTexts = ##f\n
     \\key $t{key}
     \\time $t{time}
