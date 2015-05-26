@@ -1,0 +1,2 @@
+gs4 | b e fs b | a b cs' b | b gs a fs | gs2.
+gs4 | gs fs a fs | gs fs fs e | a gs fs fs | gs2.
