@@ -158,7 +158,11 @@ EOF
  my $partial = '';
  $partial = "\\partial $t{partial}" if (defined $t{partial});
  foreach my $part (sort keys %{$t{notes}}) {
-  print "$part = \\transpose c $TRANSPOSES{$part} { \\clef $CLEFS{$part} $partial $autobeam $t{notes}{$part} }\n";
+   my $notes = $t{notes}{$part};
+   if (defined $s{double} && $s{double}) {
+     $notes = "$notes $notes";
+   }
+   print "$part = \\transpose c $TRANSPOSES{$part} { \\clef $CLEFS{$part} $partial $autobeam $notes }\n";
  }
  for(my $i=0, my $v='A'; $i < @{$s{verses}}; $i++, $v++) {
   print "verse$v = \\lyricmode {\n";
