@@ -1,1 +1,1 @@
-timidity --output-24bit -Ow -o foo.wav foo.mid
+timidity -T250 --output-24bit -Ow -o foo.wav foo.mid
